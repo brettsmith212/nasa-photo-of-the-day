@@ -2,9 +2,6 @@ import React from "react";
 import "./MainContent.css";
 
 function MainContent(props) {
-  if (props.data) {
-    console.log(props.data.title);
-  }
   return (
     <section>
       {props.data ? (
