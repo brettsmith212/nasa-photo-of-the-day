@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
 
 function App() {
   const [data, setData] = useState(null);
@@ -13,16 +15,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun{" "}
-        <span role="img" aria-label="go!">
-          🚀
-        </span>
-        !
-      </p>
-    </div>
+    <>
+      <Navbar />
+      <MainContent />
+    </>
   );
 }
 
