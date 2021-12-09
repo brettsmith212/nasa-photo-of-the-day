@@ -1,9 +1,26 @@
 import React from "react";
-import "./MainContent.css";
+import styled from "styled-components";
+
+const MainContentSection = styled.section`
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin-top: 2%;
+    text-decoration: none;
+  }
+
+  img {
+    height: 50rem;
+  }
+`;
 
 function MainContent(props) {
   return (
-    <section>
+    <MainContentSection>
       {props.data ? (
         <>
           <h1>{props.data.title}</h1>
@@ -17,7 +34,7 @@ function MainContent(props) {
       ) : (
         <h1>Loading...</h1>
       )}
-    </section>
+    </MainContentSection>
   );
 }
 
