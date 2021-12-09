@@ -24,6 +24,7 @@ const Logo = styled.div`
 
   h2 {
     font-size: ${({ theme }) => theme.h2};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;
 
