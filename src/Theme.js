@@ -6,7 +6,7 @@ export default {
   copyright: "1rem",
   primaryColor: "#14213d",
   secondaryColor: "#fca311",
-  lightTextColor: "#e5e5e5",
+  backgroundColor: "#e5e5e5",
   darkTextColor: "#000000",
   white: "#fff",
 };

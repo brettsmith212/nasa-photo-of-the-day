@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 const MainContentSection = styled.section`
   margin-top: 3rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${({ theme }) => theme.backgroundColor};
 
   h1 {
     font-size: ${({ theme }) => theme.h1};
@@ -14,6 +16,7 @@ const MainContentSection = styled.section`
   }
 
   h3 {
+    margin-top: 1rem;
     font-size: ${({ theme }) => theme.h3};
     color: ${({ theme }) => theme.primaryColor};
   }
@@ -22,12 +25,13 @@ const MainContentSection = styled.section`
     margin-top: 2%;
     text-decoration: none;
     font-size: ${({ theme }) => theme.a};
-    color: ${({ theme }) => theme.secondaryColor};
+    color: ${({ theme }) => theme.darkTextColor};
   }
 
   p {
+    margin-top: 1rem;
     font-size: ${({ theme }) => theme.copyright};
-    color: ${({ theme }) => theme.lightTextColor};
+    color: ${({ theme }) => theme.darkTextColor};
   }
 
   img {

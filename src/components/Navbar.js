@@ -14,6 +14,7 @@ const Nav = styled.nav`
   justify-content: flex-start;
   align-items: center;
   margin: 0 5%;
+  background-color: ${({ theme }) => theme.backgroundColor};
 `;
 
 const Logo = styled.div`
