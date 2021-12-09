@@ -1,5 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const kf = keyframes`
+100% {
+  opacity: 1;
+  transform: scale(1) rotateZ(0);
+}
+`;
 
 const Nav = styled.nav`
   height: 10rem;
@@ -9,12 +16,23 @@ const Nav = styled.nav`
   margin: 0 5%;
 `;
 
+const Logo = styled.div`
+  width: 30rem;
+  opacity: 0;
+  transform: scale(2) rotateZ(180deg);
+  animation: ${kf} 0.5s ease-in-out forwards;
+
+  h2 {
+    font-size: ${({ theme }) => theme.h2};
+  }
+`;
+
 function Navbar() {
   return (
     <Nav>
-      <div className="logo">
+      <Logo>
         <h2>NASA Picture of the Day</h2>
-      </div>
+      </Logo>
     </Nav>
   );
 }
